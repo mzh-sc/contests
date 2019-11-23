@@ -14,3 +14,5 @@ Note: --prune option doesn't remove unused packages anymore
 jupyter notebook list  
 jupyter notebook stop 8888
 taskkill /IM jupyter-notebook.exe /F
+
+pip install --editable .
