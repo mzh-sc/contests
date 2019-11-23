@@ -1,1 +1,8 @@
-.ipynb_checkpoints
+# Jupyter
+.ipynb_checkpoints/
+
+# Byte-compiled
+__pycache__/
+
+# Distribution / packaging
+*.egg-info/
