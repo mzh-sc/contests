@@ -1,4 +1,4 @@
 {
-    "local.condaPath": "%userprofile%\\AppData\\Local\\Continuum\\miniconda3",
-    "python.pythonPath": "%userprofile%\\AppData\\Local\\Continuum\\miniconda3\\envs\\becoming-data-scientist\\python.exe"
+    "local.condaPath": "C:\\Users\\Max\\Miniconda3",
+    "python.pythonPath": "C:\\Users\\Max\\Miniconda3\\envs\\becoming-data-scientist\\python.exe"
 }
