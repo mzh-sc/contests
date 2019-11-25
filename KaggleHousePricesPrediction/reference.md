@@ -1,10 +1,14 @@
+# Python
+python -m unittest discover -v -s ./tests -p *_test.py
+
+
 # CONDA
 
 ## Environment
 * conda env create --file environment.yml</br>
 * conda remove --name becoming-data-scientist --all</br>
 * conda env update --file environment.yml</br>
-Note: --prune option doesn't remove unused packages anymore
+Note: --prune option doesn't remove unused packages anymore.
 
 ## Basic 
 * conda search [package] --info
@@ -16,3 +20,9 @@ jupyter notebook stop 8888
 taskkill /IM jupyter-notebook.exe /F
 
 pip install --editable .
+
+# GIT
+
+## To ignore changes of versioned files 
+git update-index --assume-unchanged "main/dontcheckmein.txt"
+git update-index --no-assume-unchanged "main/dontcheckmein.txt"
