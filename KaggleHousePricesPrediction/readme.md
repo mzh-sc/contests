@@ -1,1 +1,1 @@
-https://blog.godatadriven.com/write-less-terrible-notebook-code
+
