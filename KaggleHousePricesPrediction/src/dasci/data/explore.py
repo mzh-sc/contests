@@ -1,4 +1,11 @@
 import pandas as pd
+import os.path as path
+
+def load_data(file):
+    full_path = path.join(path.abspath(''), file)
+    print(f"Loading {full_path}")
+
+    return pd.read_csv(full_path)
 
 def missing_values_info(df: pd.DataFrame, max_unique_values_count = 10):
     '''
@@ -23,3 +30,14 @@ def missing_values_info(df: pd.DataFrame, max_unique_values_count = 10):
                                sort=False)
     
     return missing_values[missing_values['Total'] > 0]
+
+def suspicious_columns_info(df: pd.DataFrame, 
+        max_unique_values_count=10, 
+        min_unique_value_ratio = 0.95):
+    suspicious_value_counts = {}
+    for col in df.columns:
+        col_value_counts = df[col].value_counts()
+        if len(col_value_counts) < max_unique_values_count and (col_value_counts / len(df[col]) > min_unique_value_ratio).any():
+            suspicious_value_counts[col] = str(col_value_counts.to_dict())
+        
+    return suspicious_value_counts

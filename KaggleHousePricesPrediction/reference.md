@@ -23,6 +23,8 @@ pip install --editable .
 
 # GIT
 
+git log -p -1 <file name> - to show changes for specific file
+
 ## To ignore changes of versioned files 
 git update-index --assume-unchanged "main/dontcheckmein.txt"
 git update-index --no-assume-unchanged "main/dontcheckmein.txt"
