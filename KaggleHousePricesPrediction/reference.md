@@ -23,8 +23,18 @@ pip install --editable .
 
 # GIT
 
+git status -u
+
+git checkout <hash> filename or git reset <hash> filename - to revert changes of specific file
+
 git log -p -1 <file name> - to show changes for specific file
+git log -- <file name> - list commits
+
+git diff <commit>
 
 ## To ignore changes of versioned files 
 git update-index --assume-unchanged "main/dontcheckmein.txt"
 git update-index --no-assume-unchanged "main/dontcheckmein.txt"
+
+ls -a - list files in git bash
+cd folder
