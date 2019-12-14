@@ -1,4 +1,4 @@
-name: becoming-data-scientist
+name: kaggle-house-prices-prediction
 channels:
   - conda-forge
   - defaults
