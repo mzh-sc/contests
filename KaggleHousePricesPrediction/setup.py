@@ -8,6 +8,5 @@ setup(
     name="dasci",
     version="0.1",
     package_dir={'': 'src'},
-    packages=find_packages(where='src'),
     long_description=read('README.md'),
 )

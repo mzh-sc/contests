@@ -23,6 +23,7 @@ pip install --editable .
 
 # GIT
 
+git pull origin develop - in case of "There is no tracking information for the current branch"
 git status -u
 
 git checkout <hash> filename or git reset <hash> filename - to revert changes of specific file

@@ -1,6 +1,6 @@
 import unittest
 
-import src.dasci.data.explore as expl
+import src.data.explore as expl
 import pandas as pd
 
 from tabulate import tabulate
