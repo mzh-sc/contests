@@ -44,12 +44,3 @@ def plot_coef(coefs: pd.Series):
     important_coefs.plot(kind = "barh")
     plt.title("Coefficients")
     plt.show()
-
-def encode(df: pd.DataFrame):
-    categorical_features = df.select_dtypes(include = ["object"]).columns
-    if categorical_features.empty:
-        return df
-        
-    numerical_features = df.select_dtypes(exclude = ["object"]).columns
-    
-    return pd.concat([df[numerical_features], pd.get_dummies(df[categorical_features])], axis=1)
