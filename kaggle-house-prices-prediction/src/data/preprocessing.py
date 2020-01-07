@@ -7,9 +7,9 @@ import src.data.pandas_transforms as tr
 import pandas as pd
 
 def create_preprocessing_pipeline() -> Pipeline:
-    def impute_garage_yr_blt(df):
-        df.loc[df['GarageYrBlt'].isnull(), ['GarageYrBlt']] = df.loc[df['GarageYrBlt'].isnull(), 'YearBuilt']
-        return df
+    def impute_garage_yr_blt(X, y):
+        X.loc[X['GarageYrBlt'].isnull(), ['GarageYrBlt']] = X.loc[X['GarageYrBlt'].isnull(), 'YearBuilt']
+        return X
 
     pipeline = Pipeline(steps=[
             ('drop_id', tr.DropColumns(columns_to_drop=['Id'])), 
@@ -18,7 +18,7 @@ def create_preprocessing_pipeline() -> Pipeline:
                 columns_to_drop=['PoolQC', 'MiscFeature', 'Alley', 'Fence', 'FireplaceQu', 'LotFrontage'])),
             
             ('drop_electrical_rows', tr.DataFrameFunctionTransformer(
-                lambda df: df.drop(df.loc[df['Electrical'].isnull()].index)
+                lambda X, y: X.drop(X.loc[X['Electrical'].isnull()].index)
             )),
 
             ('impute_garage_columns', DataFrameMapper(gen_features(

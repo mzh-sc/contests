@@ -38,4 +38,7 @@ class DataFrameFunctionTransformer(BaseEstimator, TransformerMixin):
         return self
 
     def transform(self, X: pd.DataFrame, y=None):
-        return self.__func(X)
+        return self.__func(X, y)
+
+    def fit_transform(self, X: pd.DataFrame, y=None):
+        return self.__func(X, y)

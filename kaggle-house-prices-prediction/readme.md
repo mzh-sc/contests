@@ -2,6 +2,9 @@ Kaggle House Price prediction using a pipeline
 https://www.kaggle.com/drscarlat/house-prices-all-done-via-pipeline
 https://www.kaggle.com/kabure/houseprices-pipeline-featuretools-tpot
 
+Feature selection tool
+https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0
+
 [Dataset transformations with scikit](https://scikit-learn.org/stable/data_transforms.html)
 [Sklearn-pandas](https://github.com/scikit-learn-contrib/sklearn-pandas)
 
