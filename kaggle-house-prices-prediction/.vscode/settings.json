@@ -1,6 +1,6 @@
 {
     "local.condaPath": "~\\AppData\\Local\\Continuum\\miniconda3",
-    "python.pythonPath": "C:\\Users\\m.zhukov\\AppData\\Local\\Continuum\\miniconda3\\envs\\becoming-data-scientist\\python.exe",
+    "python.pythonPath": "~\\AppData\\Local\\Continuum\\miniconda3\\envs\\becoming-data-scientist\\python.exe",
     "python.testing.unittestArgs": [
         "-v",
         "-s",
