@@ -1,0 +1,14 @@
+{
+    "local.condaPath": "C:\\Users\\m.zhukov\\AppData\\Local\\Continuum\\miniconda3",
+    "python.pythonPath": "C:\\Users\\m.zhukov\\AppData\\Local\\Continuum\\miniconda3\\envs\\probabilistic-modelling\\python.exe",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*_test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.unittestEnabled": true
+}
