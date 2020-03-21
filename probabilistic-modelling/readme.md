@@ -2,3 +2,5 @@ To install TF 2.1 on Win10 VS2015-2019 is required https://support.microsoft.com
 
 Resources:
 * TensorFlow Probability examples https://github.com/tensorflow/probability/tree/master/tensorflow_probability/examples/jupyter_notebooks
+* VAE https://colab.research.google.com/github/tensorflow/probability/blob/master/tensorflow_probability/examples/jupyter_notebooks/Probabilistic_Layers_VAE.ipynb
+* Tour of tfp https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/jupyter_notebooks/A_Tour_of_TensorFlow_Probability.ipynb
